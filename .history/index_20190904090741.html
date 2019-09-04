@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <title>Jenga</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="#">
+
+      <h1>Jenga</h1>
+    </a>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Log in</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 3</a>
+      </li>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="search">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form id="search" class="form-inline">
+          <input class="form-control mr-sm-2" style="opacity: 1" type="text" placeholder="Search">
+          <button class="btn btn-warning" style="opacity: 1" type="submit">Search</button>
+        </form>
+      </nav>
+    </ul>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg bg-light navbar-black sticky-top justify-content-center">
+    <!-- Brand -->
+
+    <img src="./Images/logo.jpeg" alt="logo" style="width:130px;" style="opacity: 0.5" id="img">
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link nav2" href="#">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav2" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav2" href="#">Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav2" href="#">Blog</a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Products
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item " href="#">Ballast</a>
+          <a class="dropdown-item " href="#">Sand</a>
+          <a class="dropdown-item " href="#">Cement</a>
+          <a class="dropdown-item " href="#">Steel Bars</a>
+          <a class="dropdown-item " href="#">Building Stones</a>
+          <a class="dropdown-item " href="#">Building Blocks</a>
+          <a class="dropdown-item " href="#">Gravel</a>
+          <a class="dropdown-item " href="#">Mazeras</a>
+          <a class="dropdown-item " href="#">Timber</a>
+          <a class="dropdown-item " href="#">Logs</a>
+          <a class="dropdown-item " href="#">Dust Nets</a>
+          <a class="dropdown-item " href="#">Bricks</a>
+          <a class="dropdown-item " href="#">Iron Sheets</a>
+          <a class="dropdown-item " href="#">Scaffoling</a>
+          <a class="dropdown-item " href="#">Panes</a>
+          <a class="dropdown-item " href="#">Slabs</a>
+          <a class="dropdown-item " href="#">Binding Wire</a>
+          <a class="dropdown-item " href="#">Roofing</a>
+
+
+        </div>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Finishing Products
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item " href="#">Paint</a>
+          <a class="dropdown-item " href="#">Tiles</a>
+          <a class="dropdown-item " href="#">Ceilings</a>
+          <a class="dropdown-item " href="#">Sinks</a>
+          <a class="dropdown-item " href="#">Windows</a>
+          <a class="dropdown-item " href="#">Tanks</a>
+          <a class="dropdown-item " href="#">Wallpaper</a>
+          <a class="dropdown-item " href="#">Gutters</a>
+          <a class="dropdown-item " href="#">Gypsum</a>
+          <a class="dropdown-item " href="#">Showers</a>
+          <a class="dropdown-item " href="#">Housing Appliances</a>
+
+
+        </div>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Equipments
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item " href="#">Concrete Mixer</a>
+          <a class="dropdown-item " href="#">Wheelbarrow</a>
+          <a class="dropdown-item " href="#">Shovel</a>
+
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+
+  <!-- hot deals -->
+  <h1 id="hot">HOT DEALS</h1>
+  <div class="container-fluid">
+    <div class="back1">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="con">
+              <img class="card-img-top" src="./Images/material5.jpeg" alt="">
+              <div class="overlay">
+
+                <div class="card-body">
+                  <p class="text">
+
+                  </p>
+                  <button class="bg-warning" type="button" data-toggle="modal"
+                    data-target="#exampleModalCenter">click</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="con">
+              <img class="card-img-top" src="./Images/material4.jpg" alt="">
+              <div class="overlay">
+
+                <div class="card-body">
+                  <p class="text"> aut culpa deserunt ut laudantium dolores non illo ab fugiat, eveniet
+                    minus
+                    eligendi illum.</p>
+                  <button class="bg-warning" type="button" data-toggle="modal"
+                    data-target="#exampleModalCenter">click</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="con">
+              <img class="card-img-top" src="./Images/wood2.jpg" alt="">
+              <div class="overlay">
+                <div class="card-body">
+                  <p class="text"> non illo ab fugiat, eveniet
+                    minus
+                    eligendi illum.</p>
+                  <button class="bg-warning" type="button" data-toggle="modal"
+                    data-target="#exampleModalCenter">click</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><br><br>
+
+
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="con">
+              <img class="card-img-top" src="./Images/material3.jpeg" alt="">
+              <div class="overlay">
+                <div class="card-body">
+                  <p class="text"> laborum! Alias consequuntur cupiditate incidunt et
+                    tempore sequi enim atque autem.</p>
+                  <button class="bg-warning" type="button" data-toggle="modal"
+                    data-target="#exampleModalCenter">click</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class=" col-sm-4 ">
+          <div class="card">
+            <div class="con">
+              <img class="card-img-top" src="./Images/bull.jpg" alt="">
+              <div class="overlay">
+                <div class="card-body">
+                  <p class="text"> asperiores ab soluta ipsam sapiente dolorem, atque minima
+                    molestiae minus doloremque quos.</p>
+                  <button class="bg-warning" type="button" data-toggle="modal"
+                    data-target="#exampleModalCenter">click</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class=" col-sm-4 ">
+          <div class="card">
+            <div class="con">
+              <img class="card-img-top" src="./Images/material2.jpeg" alt="" height="">
+              <div class="overlay">
+
+                <div class="card-body">
+                  <p class="text"> aut culpa deserunt ut laudantium dolores non illo ab fugiat, eveniet
+                    minus
+                    eligendi illum.</p>
+                  <button class="bg-warning" type="button" data-toggle="modal"
+                    data-target="#exampleModalCenter">click</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br><br>
+
+
+
+
+
+        <div class=" col-sm-4 ">
+          <div class="card">
+            <div class="con">
+              <img class="card-img-top" src="./Images/binding2.jpg" alt="">
+              <div class="overlay">
+
+                <div class="card-body">
+                  <p class="text"> aut culpa deserunt ut laudantium dolores non illo ab fugiat, eveniet
+                    minus
+                    eligendi illum.</p>
+                  <button class="bg-warning" type="button" data-toggle="modal"
+                    data-target="#exampleModalCenter">click</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 ">
+          <div class="card">
+            <div class="con">
+              <img class="card-img-top" src="./Images/slides/cement.jpg" alt="">
+              <div class="overlay">
+
+                <div class="card-body">
+                  <p class="text"> aut culpa deserunt ut laudantium dolores non illo ab fugiat, eveniet
+                    minus
+                    eligendi illum.</p>
+                  <button class="bg-warning" type="button" data-toggle="modal"
+                    data-target="#exampleModalCenter">click</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="con">
+              <img class="card-img-top" src="./Images/slides/clay-bricks.jpg" alt="">
+              <div class="overlay">
+
+                <div class="card-body">
+                  <p class="text"> aut culpa deserunt ut laudantium dolores non illo ab fugiat, eveniet
+                    minus
+                    eligendi illum.</p>
+                  <button class="bg-warning" type="button" data-toggle="modal"
+                    data-target="#exampleModalCenter">click</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <h1 id="hot" style="color: goldenrod">PRODUCT CATEGORIES</h1>
+
+    <!-- <nav class="nav4">
+      <a href="#" class="nav-toggle-btn"></a>
+      <ul>
+
+
+        <li><a href="#" class="btn bg-warning" style="margin-left: -15%">Materials</a></li>
+        <li><a href="#" class="btn bg-warning" style="margin-left: -35%">Order</a></li>
+        <li><a href="#" class="btn bg-warning" style="margin-left: -15%">Materials</a></li>
+        <li><a href="#" class="btn bg-warning" style="margin-left: -35%">Order</a></li>
+        <li><a href="#" class="btn bg-warning" style="margin-left: -15%">Materials</a></li>
+        <li><a href="#" class="btn bg-warning" style="margin-left: -35%">Order</a></li>
+
+
+      </ul>
+    </nav> -->
+
+
+
+    <div class="content">
+
+  <div class="back">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="con">
+                  <img class="card-img-top" src="./Images/collective1.jpg" height="500vh" alt="">
+                  <div class="overlay">
+
+                    <div class="card-body">
+                      <p class="text1">
+                        <h1>BUILDING MATERIALS</h1>
+                      </p>
+                      <button><a href="#">VIEW</a> </button>
+                      
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <br><br><br>
+
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="con">
+                  <img class="card-img-top" src="./Images/fitting materials.jpg" height="500vh" alt="">
+                  <div class="overlay">
+
+                    <div class="card-body">
+                      <p class="text"> aut culpa deserunt ut laudantium dolores non illo ab fugiat, eveniet
+                        minus
+                        eligendi illum.</p>
+                      <button class="bg-warning" type="button" data-toggle="modal"
+                        data-target="#exampleModalCenter">click</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <br><br><br>
+
+
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="con">
+                  <img class="card-img-top" src="./Images/equiments0.jpg" height="500vh" alt="">
+                  <div class="overlay">
+                    <div class="card-body">
+                      <p class="text2">EQUIPMENTS </p>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><br><br>
+
+
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="con">
+                  <img class="card-img-top" src="./Images/equiments0.jpg" height="500vh" alt="">
+                  <div class="overlay">
+                    <div class="card-body">
+                      <p class="text"> laborum! Alias consequuntur cupiditate incidunt et
+                        tempore sequi enim atque autem.</p>
+                      <button class="bg-warning" type="button" data-toggle="modal"
+                        data-target="#exampleModalCenter">click</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class=" col-sm-4 ">
+              <div class="card">
+                <div class="con">
+                  <img class="card-img-top" src="./Images/slides/sand.jpeg" alt="">
+                  <div class="overlay">
+                    <div class="card-body">
+                      <p class="text"> asperiores ab soluta ipsam sapiente dolorem, atque minima
+                        molestiae minus doloremque quos.</p>
+                      <button class="bg-warning" type="button" data-toggle="modal"
+                        data-target="#exampleModalCenter">click</button>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class=" col-sm-4 ">
+              <div class="card">
+                <div class="con">
+                  <img class="card-img-top" src="./Images/bull.jpg" alt="" height="">
+                  <div class="overlay">
+
+                    <div class="card-body">
+                      <p class="text"> aut culpa deserunt ut laudantium dolores non illo ab fugiat, eveniet
+                        minus
+                        eligendi illum.</p>
+                      <button class="bg-warning" type="button" data-toggle="modal"
+                        data-target="#exampleModalCenter">click</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <br><br><br>
+
+
+
+
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <div class="trial">
+        <div class="cl-lg-12" style="position: relative"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore in quod ipsum, error amet ratione blanditiis
+          doloribus similique iste dicta facilis, unde necessitatibus nemo cumque corporis neque nobis quibusdam
+          adipisci?</p>
+      </div>
+
+
+
+
+</body>
+
+</html>

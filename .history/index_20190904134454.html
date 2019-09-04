@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <title>Jenga</title>
+</head>
+
+<body>
+
+  <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+    <!-- <a class="navbar-brand" href="#">
+
+      <h1>Jenga</h1>
+    </a>
+
+    <!-- Links -->
+    <!-- <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Log in</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 3</a>
+      </li>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="search">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form id="search" class="form-inline">
+          <input class="form-control mr-sm-2" style="opacity: 1" type="text" placeholder="Search">
+          <button class="btn btn-warning" style="opacity: 1" type="submit">Search</button>
+        </form>
+      </nav>
+    </ul>
+  </nav> -->
+
+  <!-- <nav class="navbar navbar-expand-lg bg-light navbar-black sticky-top justify-content-center">
+    Brand -->
+
+    <!-- <img src="./Images/logo.jpeg" alt="logo" style="width:130px;" style="opacity: 0.5" id="img">
+    <!-- Links -->
+    <!-- <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link nav2" href="#">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav2" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav2" href="#">Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav2" href="#">Blog</a>
+      </li> --> -->
+      <!-- Dropdown -->
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Products
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item " href="#">Ballast</a>
+          <a class="dropdown-item " href="#">Sand</a>
+          <a class="dropdown-item " href="#">Cement</a>
+          <a class="dropdown-item " href="#">Steel Bars</a>
+          <a class="dropdown-item " href="#">Building Stones</a>
+          <a class="dropdown-item " href="#">Building Blocks</a>
+          <a class="dropdown-item " href="#">Gravel</a>
+          <a class="dropdown-item " href="#">Mazeras</a>
+          <a class="dropdown-item " href="#">Timber</a>
+          <a class="dropdown-item " href="#">Logs</a>
+          <a class="dropdown-item " href="#">Dust Nets</a>
+          <a class="dropdown-item " href="#">Bricks</a>
+          <a class="dropdown-item " href="#">Iron Sheets</a>
+          <a class="dropdown-item " href="#">Scaffoling</a>
+          <a class="dropdown-item " href="#">Panes</a>
+          <a class="dropdown-item " href="#">Slabs</a>
+          <a class="dropdown-item " href="#">Binding Wire</a>
+          <a class="dropdown-item " href="#">Roofing</a>
+
+
+        </div>
+      </li> -->
+      <!-- Dropdown -->
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Finishing Products
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item " href="#">Paint</a>
+          <a class="dropdown-item " href="#">Tiles</a>
+          <a class="dropdown-item " href="#">Ceilings</a>
+          <a class="dropdown-item " href="#">Sinks</a>
+          <a class="dropdown-item " href="#">Windows</a>
+          <a class="dropdown-item " href="#">Tanks</a>
+          <a class="dropdown-item " href="#">Wallpaper</a>
+          <a class="dropdown-item " href="#">Gutters</a>
+          <a class="dropdown-item " href="#">Gypsum</a>
+          <a class="dropdown-item " href="#">Showers</a>
+          <a class="dropdown-item " href="#">Housing Appliances</a>
+
+
+        </div>
+      </li> -->
+      <!-- Dropdown -->
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Equipments
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item " href="#">Concrete Mixer</a>
+          <a class="dropdown-item " href="#">Wheelbarrow</a>
+          <a class="dropdown-item " href="#">Shovel</a>
+
+        </div>
+      </li>
+    </ul>
+  </nav> --> -->
+
+
+  <!-- hot deals -->
+  <h1 id="hot">HOT DEALS</h1>
+  <div class="container-fluid">
+    <div class="back1">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card2">
+            <div class="con">
+              <img class="card-img-top" src="./Images/material5.jpeg" alt="" class="img-thumbnail">
+              <div class="overlay">
+
+                <div class="card-body">
+                    <p class="text" class="container-fluid">
+                        <h5><strong>OFFER</strong></h5>
+                        <em class="btn bg-warning">was <strike>7000</strike></em>
+                        <em class="btn bg-warning">now </em>
+                      </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card2">
+            <div class="con">
+              <img class="card-img-top" src="./Images/material4.jpg" alt="">
+              <div class="overlay">
+
+                <div class="card-body">
+                    <p class="text">
+                        <h5><strong>PRICE on OFFER</strong></h5>
+                        <em class="btn bg-warning">was <strike>7000</strike></em><br><br>
+                        <em class="btn bg-warning">now </em>
+                      </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-4">
+          <div class="card2">
+            <div class="con">
+              <img class="card-img-top" src="./Images/wood2.jpg" alt="" style="opacity: 0.5">
+              <div class="overlay">
+                <div class="card-body">
+                    <p class="text">
+                        <h5><strong>OFFER</strong></h5>
+                        <em class="btn bg-warning">was <strike>7000</strike></em><br><br>
+                        <em class="btn bg-warning">now </em>
+                      </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><br><br>
+
+
+        <div class="col-sm-4">
+          <div class="card2">
+            <div class="con">
+              <img class="card-img-top" src="./Images/material3.jpeg" alt="">
+              <div class="overlay">
+                <div class="card-body">
+                    <p class="text">
+                        <h5><strong>OFFER</strong></h5>
+                        <em class="btn bg-warning">was <strike>7000</strike></em><br><br>
+                        <em class="btn bg-warning">now </em>
+                      </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class=" col-sm-4 ">
+          <div class="card2">
+            <div class="con">
+              <img class="card-img-top" src="./Images/bull.jpg" alt="">
+              <div class="overlay">
+                <div class="card-body">
+                    <p class="text">
+                        <h5><strong>OFFER</strong></h5>
+                        <em class="btn bg-warning">was <strike>7000</strike></em><br><br>
+                        <em class="btn bg-warning">now </em>
+                      </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class=" col-sm-4 ">
+          <div class="card2">
+            <div class="con">
+              <img class="card-img-top" src="./Images/material2.jpeg" alt="" height="">
+              <div class="overlay">
+
+                <div class="card-body">
+                    <p class="text">
+                        <h5><strong>OFFER</strong></h5>
+                        <em class="btn bg-warning">was <strike>7000</strike></em><br><br>
+                        <em class="btn bg-warning">now </em>
+                      </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br><br>
+
+
+
+
+
+        <div class=" col-sm-4 ">
+          <div class="card2">
+            <div class="con">
+              <img class="card-img-top" src="./Images/binding2.jpg" alt="">
+              <div class="overlay">
+
+                <div class="card-body">
+                    <p class="text">
+                        <h5><strong>PRICE on OFFER</strong></h5>
+                        <em class="btn bg-warning">was <strike>7000</strike></em><br><br>
+                        <em class="btn bg-warning">now </em>
+                      </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 ">
+          <div class="card2">
+            <div class="con">
+              <img class="card-img-top" src="./Images/slides/cement.jpg" alt="">
+              <div class="overlay">
+
+                <div class="card-body">
+                    <p class="text">
+                        <h5><strong>OFFER</strong></h5>
+                        <em class="btn bg-warning">was <strike>7000</strike></em><br><br>
+                        <em class="btn bg-warning">now </em>
+                      </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-4">
+          <div class="card2">
+            <div class="con">
+              <img class="card-img-top" src="./Images/slides/clay-bricks.jpg" alt="">
+              <div class="overlay">
+
+                <div class="card-body">
+                    <p class="text">
+                        <h5><strong>OFFER</strong></h5>
+                        <em class="btn bg-warning">was <strike>7000</strike></em><br><br>
+                        <em class="btn bg-warning">now </em>
+                      </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+   
+
+
+
+
+
+<section class="container p-t-3">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>PRODUCT MATERIALS</h1>
+        </div>
+    </div>
+</section>
+<section class="carousel slide" data-ride="carousel" id="postsCarousel">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-md-right lead">
+                <a class="btn btn-secondary-o" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+                <a class="btn btn-secondary-outline next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container p-t-0 m-t-2 carousel-inner">
+        <div class="row row-equal carousel-item active m-t-0">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top card-img-top-250">
+                        <img class="img-fluid" src="./Images/construction2.webp" alt="Carousel 1">
+                    </div>
+                    <div class="card-block p-t-2">
+                        <h6 class="small text-wide p-b-2">Insight</h6>
+                        <h2>
+                            <a href>Why Stuff Happens Every Year.</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top card-img-top-250">
+                        <img class="img-fluid" src="./Images/background3.jpeg" alt="Carousel 2">
+                    </div>
+                    <div class="card-block p-t-2">
+                        <h6 class="small text-wide p-b-2">Development</h6>
+                        <h2>
+                            <a href>How to Make Every Line Count.</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top card-img-top-250">
+                        <img class="img-fluid" src="./Images/buildingmaterials1.jpg" alt="Carousel 3">
+                    </div>
+                    <div class="card-block p-t-2">
+                        <h6 class="small text-wide p-b-2">Design</h6>
+                        <h2>
+                            <a href>Responsive is Essential.</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-equal carousel-item m-t-0">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top card-img-top-250">
+                        <img class="img-fluid" src="./Images/2.jpeg" alt="Carousel 4">
+                    </div>
+                    <div class="card-block p-t-2">
+                        <h6 class="small text-wide p-b-2">Another</h6>
+                        <h2>
+                            <a href>Tagline or Call-to-action.</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top card-img-top-250">
+                        <img class="img-fluid" src="./Images/1.jpeg" alt="Carousel 5">
+                    </div>
+                    <div class="card-block p-t-2">
+                        <h6 class="small text-wide p-b-2"><span class="pull-xs-right">12.04</span> Category 1</h6>
+                        <h2>
+                            <a href>This is a Blog Title.</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 fadeIn wow">
+                <div class="card">
+                    <div class="card-img-top card-img-top-250">
+                        <img class="img-fluid" src="./Images/bull.jpg" alt="Carousel 6">
+                    </div>
+                    <div class="card-block p-t-2">
+                        <h6 class="small text-wide p-b-2">Category 3</h6>
+                        <h2>
+                            <a href>Catchy Title of a Blog Post.</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+
+
+</body>
+
+</html>
